@@ -77,7 +77,7 @@ namespace LifterMod
                             buyCooldown = true;
 
                             // Lift creation
-                            Lift l = new Lift(0f, Buying.SpawnPosition.x, Buying.SpawnPosition.y, Buying.SpawnPosition.z, 0f, 0f, true, 0f, 0f, false, 0f, 1f);
+                            Lift l = new Lift(0f, Buying.SpawnPosition.x, Buying.SpawnPosition.y, Buying.SpawnPosition.z, 0f, 0f, true, 0f, 0f, false, 0f, 0f);
                             SavingWrapper.GetInstance().CreateLifter(l, true);
                         }
                     }
@@ -97,7 +97,7 @@ namespace LifterMod
                             buyCooldown = true;
 
                             // Lift creation
-                            Lift l = new Lift(0f, Buying.SpawnPosition.x, Buying.SpawnPosition.y, Buying.SpawnPosition.z, 0f, 0f, false, 0f, 0f, false, 0f, 0f);
+                            Lift l = new Lift(0f, Buying.SpawnPosition.x, Buying.SpawnPosition.y, Buying.SpawnPosition.z, 0f, 0f, false, 0f, 0f, false, 0f, 1f);
                             SavingWrapper.GetInstance().CreateLifter(l, true);
                         }
                     }
