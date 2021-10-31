@@ -292,7 +292,6 @@ namespace LifterMod
             if (!pivot)
             {
                 pivot = new GameObject("PivotLifter");
-                pivot.GetComponent<Collider>().enabled = false;
                 pivot.transform.SetParent(floor.transform);
                 pivot.transform.localPosition = new Vector3(0f, 0.1f, 0f);
                 pivot.transform.localRotation = Quaternion.Euler(0, 90, 0);
@@ -301,7 +300,6 @@ namespace LifterMod
 
             if (!floor) // This technically can't happen.
                 return;
-            
 
             movingLifter.trailerAttachedTo = trailer;
 
