@@ -161,10 +161,10 @@ namespace LifterMod
                 if (percentage >= 0.001)
                 {
                     passedTime += Time.deltaTime;
-                    if (passedTime >= 0.0001f)
+                    if (passedTime >= 0.001f)
                     {
                         passedTime = 0;
-                        percentage += -0.005f;
+                        percentage += -0.003f;
                         SetNewLifterHeight();
                     }
                 }
@@ -179,10 +179,10 @@ namespace LifterMod
                 if (percentage < 1.0f)
                 {
                     passedTime += Time.deltaTime;
-                    if (passedTime >= 0.0001f)
+                    if (passedTime >= 0.001f)
                     {
                         passedTime = 0;
-                        percentage += 0.005f;
+                        percentage += 0.003f;
                         SetNewLifterHeight();
                     }
                 }
