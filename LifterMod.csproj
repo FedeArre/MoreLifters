@@ -421,6 +421,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvalidVersionPopup.cs" />
     <Compile Include="Store\Buying.cs" />
     <Compile Include="LifterHandler.cs" />
     <Compile Include="LifterInformation.cs" />
