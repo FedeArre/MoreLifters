@@ -138,7 +138,7 @@ namespace LifterMod
 
             LiftUnityObjects lf = new LiftUnityObjects(temp, liftId, l.isSmall);
             ingameLifts.Add(liftId, lf);
-            Debug.LogError("in load: " + l.wasInTrailer);
+
             if (l.wasInTrailer)
             {
                 attachTrailers.Add(lf);
