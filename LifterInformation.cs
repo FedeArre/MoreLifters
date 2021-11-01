@@ -15,7 +15,7 @@ namespace LifterMod
         private const float minX_jack2Pos = -5.95f;
         private const float maxX_jack2Pos = -3.31f;
 
-        private const float minY_jackHeight = 0.05f;
+        private const float minY_jackHeight = 0.06f;
         private const float maxY_jackHeight = 0.51f;
 
         public float percentage;
@@ -138,6 +138,9 @@ namespace LifterMod
 
         public void resetUploaderHeight()
         {
+            GoTopStatus = false;
+            GoDownStatus = false;
+
             percentage = 0;
             SetNewLifterHeight();
         }
