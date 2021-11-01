@@ -27,7 +27,6 @@ namespace LifterMod
         {
             lf = GameObject.Find("Player").AddComponent<LifterHandler>();
             SavingWrapper.GetInstance().Load();
-            
         }
 
         public override void Continue()

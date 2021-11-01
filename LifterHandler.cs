@@ -102,7 +102,7 @@ namespace LifterMod
                         }
                     }
                     // Button controls
-                    else if (rcHit.collider.transform.name == "UpButton")
+                    else if (rcHit.collider.transform.name == "UpButton" && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
@@ -112,7 +112,7 @@ namespace LifterMod
                             rcHit.collider.transform.parent.parent.GetComponent<LifterInformation>().GoUp();
                         }
                     }
-                    else if (rcHit.collider.transform.name == "DownButton")
+                    else if (rcHit.collider.transform.name == "DownButton" && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
@@ -122,17 +122,17 @@ namespace LifterMod
                             rcHit.collider.transform.parent.parent.GetComponent<LifterInformation>().GoDown();
                         }
                     }
-                    else if (rcHit.collider.transform.name == "AllButton")
+                    else if (rcHit.collider.transform.name == "AllButton" && movingLifter == null)
                     {
                         rcHit.collider.transform.parent.parent.GetComponent<LifterInformation>().GoTop();
                     }
-                    else if (rcHit.collider.transform.name == "HalfButton")
+                    else if (rcHit.collider.transform.name == "HalfButton" && movingLifter == null)
                     {
                         rcHit.collider.transform.parent.parent.GetComponent<LifterInformation>().GoBottom();
                     }
 
                     // Slider jack rewrite
-                    else if (rcHit.collider.transform.name.StartsWith("SJUpButton"))
+                    else if (rcHit.collider.transform.name.StartsWith("SJUpButton") && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
@@ -144,7 +144,7 @@ namespace LifterMod
 
                         }
                     }
-                    else if (rcHit.collider.transform.name.StartsWith("SJDownButton"))
+                    else if (rcHit.collider.transform.name.StartsWith("SJDownButton") && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
@@ -156,7 +156,7 @@ namespace LifterMod
 
                         }
                     }
-                    else if (rcHit.collider.transform.name.StartsWith("SJLeftButton"))
+                    else if (rcHit.collider.transform.name.StartsWith("SJLeftButton") && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
@@ -168,7 +168,7 @@ namespace LifterMod
 
                         }
                     }
-                    else if (rcHit.collider.transform.name.StartsWith("SJRightButton"))
+                    else if (rcHit.collider.transform.name.StartsWith("SJRightButton") && movingLifter == null)
                     {
                         passedTime += Time.deltaTime;
                         if (passedTime >= holdTime)
