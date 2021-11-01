@@ -15,10 +15,14 @@ namespace LifterMod
         [JsonProperty("enable ramp model")]
         public bool EnableRampModel { get; set; }
 
-        public ModSettings(bool b1, bool b2)
+        [JsonProperty("slider jack controls in the middle")]
+        public bool EnableMiddleControls { get; set; }
+
+        public ModSettings(bool b1, bool b2, bool b3)
         {
             DisableDefaultLifter = b1;
             EnableRampModel = b2;
+            EnableMiddleControls = b3;
         }
     }
 

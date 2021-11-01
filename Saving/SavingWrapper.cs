@@ -51,7 +51,7 @@ namespace LifterMod
                 settings = JsonConvert.DeserializeObject<ModSettings>(json);
                 if (settings == null)
                 {
-                    settings = new ModSettings(true, true);
+                    settings = new ModSettings(true, true, true);
                 }
             }
 
@@ -61,6 +61,11 @@ namespace LifterMod
             {
                 assetNameBig += "Ramp";
                 assetNameSmall += "Ramp";
+            }
+
+            if (settings.EnableMiddleControls)
+            {
+                assetNameBig += "N";
             }
         }
 
