@@ -1,3 +1,6 @@
+## Mod has been discontinued
+Mod support has been finished since the game implemented all the features (excepting buying) lifters. Note that the lifters model may come in a future mod again!
+
 # MoreLifters
 This repository contains the source code for the My Garage mod MoreLifters. 
 
